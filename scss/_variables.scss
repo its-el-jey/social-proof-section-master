@@ -1,0 +1,25 @@
+/*--variables--*/
+$primary-color: (
+    --dark-magenta: hsl(300, 43%, 22%),
+    --soft-pink: hsl(333, 80%, 67%),
+);
+$neutral-color: (
+    --dark-grayish-magenta: hsl(303, 10%, 53%),
+    --light-grayish-magenta: hsl(300, 24%, 96%),
+    --white: hsl(0, 0%, 100%),
+);
+$fonts: (
+    --normal-weight: 400,
+    --medium-weight: 500,
+    --bold-weight: 700,
+);
+
+@function primary($color-name) {
+    @return map-get($primary-color, $color-name )
+};
+@function neutral($color-name) {
+    @return map-get($neutral-color, $color-name )
+};
+@function font($font-style) {
+    @return map-get($fonts, $font-style )
+};
