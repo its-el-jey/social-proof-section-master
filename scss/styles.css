@@ -98,4 +98,98 @@ body {
 .attribution a {
   text-decoration: none;
 }
+
+/* media queries */
+/* screen with 350px and less */
+@media screen and (max-width: 21.875em) {
+  body {
+    margin: 1em;
+  }
+}
+
+/* screen with 768px up */
+@media screen and (min-width: 48em) {
+  body {
+    margin: 3.75em;
+    background: url(/images/bg-pattern-top-desktop.svg) left top no-repeat, url(/images/bg-pattern-bottom-desktop.svg) right bottom no-repeat;
+  }
+}
+
+/* screen with 1024px up */
+@media screen and (min-width: 64em) {
+  body {
+    margin: 100px;
+  }
+  .section {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .section .section-header {
+    text-align: left;
+  }
+  .section .section-header h1 {
+    margin: 0;
+    padding: 0;
+    width: 60%;
+  }
+  .section .section-header > p {
+    padding: 0;
+    width: 90%;
+  }
+  /*--rating--*/
+  .section-rating .cont {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 15px 20px;
+    width: 88%;
+    border-radius: 10px;
+  }
+  .section-rating .cont .rating-star {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .section-rating .cont .rating-caption {
+    margin-left: 15px;
+  }
+  .section-rating .rating-guru {
+    margin-left: 6%;
+  }
+  .section-rating .rating-besttech {
+    margin-left: 12%;
+  }
+  /*--testimonial--*/
+  .section-testimonial {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 1.25em;
+  }
+  .section-testimonial .cont {
+    border-radius: 10px;
+  }
+  .section-testimonial .testimonial-second {
+    -webkit-transform: translateY(3rem);
+            transform: translateY(3rem);
+  }
+  .section-testimonial .testimonial-third {
+    -webkit-transform: translateY(6rem);
+            transform: translateY(6rem);
+  }
+  .attribution {
+    -webkit-transform: translateY(7rem);
+            transform: translateY(7rem);
+    margin-bottom: 1.25em;
+  }
+}
 /*# sourceMappingURL=styles.css.map */
